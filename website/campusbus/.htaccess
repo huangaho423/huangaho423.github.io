@@ -1,0 +1,4 @@
+# Https to http redirect using htaccess
+RewriteEngine On
+RewriteCond %{HTTPS} on
+RewriteRule (.*) http://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
