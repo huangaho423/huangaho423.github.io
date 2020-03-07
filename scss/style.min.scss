@@ -1,0 +1,153 @@
+$color-primary: #4595d6;
+$color-secondary: #495057;
+
+//$body-bg-color: #fff;
+//$border-radius: .5rem;
+
+
+//----------全域設定----------
+//BS4 Custom CSS created by David Huang,2018
+//微軟正黑體修正
+@charset "utf-8";
+
+@font-face {
+    font-family: '微軟正黑體修正';
+    unicode-range: U+7db0, U+78A7, U+7B75; //ASCII (碧筵綰)
+    font-style: normal;
+    src: local('Yu Gothic'), local('MS Gothic');
+}
+
+*,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.popover {
+    font-family: Helvetica, Arial, '微軟正黑體修正', Microsoft JhengHei, serif;
+}
+
+html,
+body {}
+
+//----------自訂義風格----------
+.myproject {
+    .badge {
+        font-size: .9rem;
+    }
+    
+    .about-bg {
+        width: 100%;
+        background-color: rgba(0, 0, 0, .7);
+    }
+
+    section#about {
+        background: url(../img/about-bg.jpg) center center no-repeat fixed;
+        background-size: cover;
+    }
+
+    //大標
+    .masthead .masthead-heading {
+        font-size: 2.5rem;
+    }
+
+    //section標題
+    .page-section .page-section-heading {
+        font-size: 2rem;
+    }
+
+    .page-section {
+        padding: 6rem 1.5rem;
+    }
+
+    //顏色設定
+    a:not(.btn) {
+        color: $color-primary;
+    }
+
+    .btn-custom {
+        color: #fff;
+        background-color: $color-primary;
+        border-color: $color-primary;
+    }
+
+    .btn-custom:hover {
+        color: $color-primary;
+        background-color: #fff;
+    }
+
+    .bg-primary {
+        background-color: $color-primary !important;
+    }
+
+    .bg-secondary {
+        background-color: $color-secondary !important;
+    }
+
+    //navbar
+    #mainNav .navbar-nav li.nav-item a.nav-link:hover {
+        color: $color-primary;
+    }
+
+    #mainNav .navbar-nav li.nav-item a.nav-link.active {
+        color: $color-primary;
+    }
+
+    a.bg-primary,
+    button.bg-primary {
+        transition: background-color .5s, color .5s;
+    }
+
+    a.bg-primary:focus,
+    a.bg-primary:hover,
+    button.bg-primary:focus,
+    button.bg-primary:hover {
+        color: $color-secondary !important;
+        background-color: #fff !important;
+        transition: background-color .5s, color .5s;
+    }
+
+    .portfolio .portfolio-item .portfolio-item-caption {
+        background-color: $color-primary;
+    }
+    
+    .portfolio .portfolio-item .portfolio-item-caption:hover {
+        opacity: .9;
+    }
+
+    .floating-label-form-group {
+        border-bottom-width: 0;
+    }
+
+    .help-block {
+
+        ul,
+        li {
+            list-style-type: none;
+            padding: .2rem 0;
+        }
+    }
+
+    .portfolio-modal .close {
+        color: #6c757d;
+    }
+
+    .floating-label-form-group input,
+    .floating-label-form-group textarea {
+        font-size: 1.2rem;
+    }
+
+    @media (min-width: 992px) {
+        #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
+            color: #fff;
+            background: $color-primary;
+        }
+    }
+}
