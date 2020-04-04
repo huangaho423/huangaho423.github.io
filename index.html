@@ -47,6 +47,21 @@
 
     <!-- Custom CSS  -->
     <link rel="stylesheet" href="css/style.min.css" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-103852145-3"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-103852145-3");
+    </script>
   </head>
 
   <body id="page-top" class="myproject">
@@ -112,17 +127,6 @@
         <div class="wow bounceInLeft mb-5" data-wow-delay=".4s">
           <!-- Masthead Heading -->
           <h1 class="masthead-heading">HI! I am David Huang</h1>
-
-          <!-- Icon Divider -->
-          <!--
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon">
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="divider-custom-line"></div>
-                </div>
-    -->
 
           <!-- Masthead Subheading -->
           <p class="h4 font-weight-light mb-0">
@@ -265,26 +269,6 @@
             </div>
           </div>
 
-          <!-- Portfolio Item 4 -->
-          <!-- <div class="col-md-6 col-lg-4">
-            <div
-              class="portfolio-item mx-auto"
-              data-toggle="modal"
-              data-target="#portfolioModal4"
-            >
-              <div
-                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
-              >
-                <div
-                  class="portfolio-item-caption-content text-center text-white"
-                >
-                  企業形象官網
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/004.jpg" alt="" />
-            </div>
-          </div> -->
-
           <!-- Portfolio Item 6 -->
           <div class="col-md-6 col-lg-4">
             <div
@@ -305,26 +289,6 @@
             </div>
           </div>
         </div>
-        <!-- Portfolio Item 6 -->
-        <!-- <div class="col-md-6 col-lg-4">
-            <div
-              class="portfolio-item mx-auto"
-              data-toggle="modal"
-              data-target="#portfolioModal6"
-            >
-              <div
-                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
-              >
-                <div
-                  class="portfolio-item-caption-content text-center text-white"
-                >
-                  客戶服務系統登入頁
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/006.jpg" alt="" />
-            </div>
-          </div>
-        </div> -->
 
         <div class="text-center">
           <a
@@ -507,15 +471,6 @@
         <p><small>Copyright © huangaho423.github.io 2020</small></p>
       </div>
     </section>
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <!--
-    <div class="scroll-to-top d-lg-none position-fixed ">
-        <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
--->
 
     <!-- Portfolio Modals -->
     <!-- Portfolio Modal 1 -->
@@ -881,123 +836,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Portfolio Modal 5 -->
-    <!-- <div
-      class="portfolio-modal modal fade"
-      id="portfolioModal5"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="portfolioModal5Label"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-          <button
-            type="button"
-            class="close"
-            data-dismiss="modal"
-            aria-label="Close"
-          >
-            <span aria-hidden="true">
-              <i class="fas fa-times"></i>
-            </span>
-          </button>
-          <div class="modal-body text-center">
-            <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-lg-8">
-                  <h2
-                    class="portfolio-modal-title text-secondary text-uppercase mb-5"
-                  >
-                    親子活動網站
-                  </h2>
-                  <img
-                    class="img-fluid rounded mb-5"
-                    src="img/portfolio/005.jpg"
-                    alt=""
-                  />
-                  <p class="text-left">
-                    <span class="badge badge-danger">PHP</span>
-                  </p>
-                  <p class="mb-5 text-left">
-                    2015年製作的親子活動網站，使用PHP架構開發，以活潑清新風格打造，附有線上報名活動功能，期間協助舉辦許多場次．
-                  </p>
-
-                  <div class="text-center">
-                    <a
-                      class="btn btn-info btn-lg rounded"
-                      href="http://future.elifemall.com.tw/"
-                      target="_blank"
-                      ><i class="fa fa-search"></i> 前往</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- Portfolio Modal 6 -->
-    <!-- <div
-      class="portfolio-modal modal fade"
-      id="portfolioModal6"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="portfolioModal6Label"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-          <button
-            type="button"
-            class="close"
-            data-dismiss="modal"
-            aria-label="Close"
-          >
-            <span aria-hidden="true">
-              <i class="fas fa-times"></i>
-            </span>
-          </button>
-          <div class="modal-body text-center">
-            <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-lg-8">
-                  <h2
-                    class="portfolio-modal-title text-secondary text-uppercase mb-5"
-                  >
-                    客戶服務系統登入頁
-                  </h2>
-                  <img
-                    class="img-fluid rounded mb-5"
-                    src="img/portfolio/006.jpg"
-                    alt=""
-                  />
-                  <p class="text-left">
-                    <span class="badge badge-warning">Bootstrap</span>
-                    <span class="badge badge-danger">PHP</span>
-                  </p>
-                  <p class="mb-5 text-left">
-                    客戶服務系統登入介面，運用Bootstrap行動優先技術，並搭配google
-                    reCAPTCHA安全驗證機制 (功能含登入、註冊、密碼重設)
-                  </p>
-                  <div class="text-center">
-                    <a
-                      class="btn btn-info btn-lg rounded"
-                      href="https://hotech.hozidesign.com/service/"
-                      target="_blank"
-                      ><i class="fa fa-search"></i> 前往</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
 
     <!-- 回頂端 -->
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
